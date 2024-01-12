@@ -1,5 +1,102 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;800;900&display=swap');
+
+* {
     padding: 0;
     margin: 0;
+    font-family: 'Work Sans', sans-serif;
     box-sizing: border-box;
+}
+
+/*-------Shared Style--------*/
+.section-title {
+    font-size: 2.80rem;
+    color: #131313;
+}
+
+.primary-btn {
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: 0;
+    margin-top: 30px;
+}
+
+.primary-btn a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/*--------Header Section Style Start--------*/
+header {
+    padding: 50px 240px;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+}
+
+/*--------Banner Section Style Start--------*/
+
+.banner .banner-content {
+    max-width: 860px;
+    margin-block: 100px 70px;
+    margin-inline: auto;
+    text-align: center;
+}
+.banner> img{
+    width: 100%;
+}
+
+.banner .banner-content .banner-title {
+    font-size: 4rem;
+}
+
+.banner .banner-content .banner-title .banner-description {
+    color: #727272;
+    font-size: 1rem;
+}
+
+
+
+/*--------Here is Mobile responsive design--------*/
+@media screen and  (max-width:576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner .banner-content{
+        margin-block: 20px;
+    }
+}
+
+/*--------Here is medium device responsive design---------*/
+
+@media screen and (min-width:576px) and (max-Width:992px){
+    header{
+        padding: 20px;
+    }
 }
