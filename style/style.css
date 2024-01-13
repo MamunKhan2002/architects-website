@@ -215,28 +215,36 @@ header nav ul li a {
 
 /*  */
 
-.sponsors-section{
+.sponsors-section {
     text-align: center;
 }
-.sponsors-section .sponsors-container{
+
+.sponsors-section .sponsors-container {
     display: flex;
     justify-content: space-between;
     margin-block: 110px 130px;
     align-items: center;
 }
 
+footer {
+    /* max-width: 1440px; */
+    /* margin: 0 auto; */
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    padding: 40px git 0px;
+    text-align: center;
+}
+
+footer>small {
+    color: #424242;
+    font-size: 1.50;
+    font-weight: 400;
+}
 
 
+/* ------------------------------------------------------------- */
 
 
-
-
-
-
-
-
-
-/*=====================================================================*/
 /*--------Here is Mobile responsive design--------*/
 @media screen and (max-width:576px) {
 
@@ -271,9 +279,11 @@ header nav ul li a {
     .features-img .ten-badge {
         position: static;
     }
-    .sponsors-section .sponsors-container img{
+
+    .sponsors-section .sponsors-container img {
         width: 40%;
     }
+
     .features-img>img {
         height: 100%;
         width: 100%;
@@ -292,6 +302,7 @@ header nav ul li a {
     .experience-section .experience-container {
         flex-direction: column;
     }
+
     .sponsors-section .sponsors-container,
     .experience-section .experience-container {
         gap: 40px;
