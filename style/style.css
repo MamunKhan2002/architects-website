@@ -130,7 +130,7 @@ header nav ul li a {
     font-weight: 700;
 }
 
-/*--------Feature Section two Design Start---------*/
+/* --------Features Card & img Design Start--------- */
 .features-card-img {
     display: flex;
     gap: 100px;
@@ -186,17 +186,18 @@ header nav ul li a {
 }
 
 
-/*  */
 
-.experience-section .experience-container{
+.experience-section .experience-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
-.experience-section .experience-container{
+
+.experience-section .experience-container {
     margin-block: 100px 0px;
 }
 
-.experience-section{
+.experience-section {
     margin-block: 120px 180px;
 }
 
@@ -205,11 +206,24 @@ header nav ul li a {
     border: 1px solid #FF900E;
     padding: 40px 35px 65px 35px;
     text-align: center;
+    width: 241px;
 }
-.experience-section .experience-container .experience-item img{
+
+.experience-section .experience-container .experience-item img {
     margin-bottom: 10px;
 }
 
+/*  */
+
+.sponsors-section{
+    text-align: center;
+}
+.sponsors-section .sponsors-container{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 110px 130px;
+    align-items: center;
+}
 
 
 
@@ -234,8 +248,8 @@ header nav ul li a {
     nav,
     .features-sec-container,
     .features-card-img,
-    .experience-section .experience-container
-     {
+    .sponsors-section .sponsors-container,
+    .experience-section .experience-container {
         flex-direction: column;
     }
 
@@ -245,8 +259,8 @@ header nav ul li a {
     }
 
     .features-sec-container,
-    .experience-section .experience-container
-     {
+    .sponsors-section .sponsors-container,
+    .experience-section .experience-container {
         gap: 40px;
     }
 
@@ -257,7 +271,9 @@ header nav ul li a {
     .features-img .ten-badge {
         position: static;
     }
-
+    .sponsors-section .sponsors-container img{
+        width: 40%;
+    }
     .features-img>img {
         height: 100%;
         width: 100%;
@@ -272,11 +288,11 @@ header nav ul li a {
     }
 
     .features-card-img,
-    .experience-section .experience-container 
-    {
+    .sponsors-section .sponsors-container,
+    .experience-section .experience-container {
         flex-direction: column;
     }
-
+    .sponsors-section .sponsors-container,
     .experience-section .experience-container {
         gap: 40px;
     }
