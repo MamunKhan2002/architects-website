@@ -79,8 +79,7 @@ header nav ul li a {
     text-align: center;
 }
 
-.banner>img,
-.features-sec-two-container>.features-two-img {
+.banner>img {
     width: 100%;
 }
 
@@ -132,35 +131,67 @@ header nav ul li a {
 }
 
 /*--------Feature Section two Design Start---------*/
-.features-sec-title-two {
-    border-left: 5px solid #FF900E;
-    padding-left: 24px;
-}
-
-.features-sec-two-container {
+.features-card-img{
     display: flex;
-    gap: 145px;
-    align-items: end;
+    gap: 100px;
+    align-items: center;
 }
 
-.features-sec-two-container .features-two-card .card .card-title {
+.features-card-img .features-content .features-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-card-img .features-content .features-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.features-card-img .features-content .features-card .card-title {
     color: #131313;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.features-sec-two-container .features-two-card .card {
-    padding: 30px 42px 30px 30px;
+.features-img .ten-badge{
+    padding: 40px 42px;
+    background-color: #FF900E;
+    max-width: 340px;
+    text-align: center;
     border-radius: 8px;
-    background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-    margin-bottom: 20px;
+    position: relative;
+    bottom: 100px;
+    right: 70px;
+    color: #FFF;
+}
+.features-img .ten-badge h2{
+font-size: 4rem;
+font-weight: 700;
+}
+.features-img .ten-badge h2 p{
+font-size: 1.6rem;
+font-weight: 500;
 }
 
-.features-sec-two-container .features-two-card {
-    margin-top: 30px;
+.features-img > img{
+    width: 710px;
+    height: 990px;
+    margin: 0 auto;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /*=====================================================================*/
@@ -174,23 +205,31 @@ header nav ul li a {
 
     nav,
     .features-sec-container,
-    .features-sec-two-container {
+    .features-card-img
+     {
         flex-direction: column;
     }
 
-    .features-sec-container,
-    .features-sec-two-container {
-        gap: 40px;
-    }
 
     .features-gallery-container {
         grid-template-columns: 1fr;
+    }
+
+    .features-sec-container {
+        gap: 40px;
     }
 
     .banner .banner-content {
         margin-block: 20px;
     }
 
+    .features-img .ten-badge{
+        position: static;
+    }
+    .features-img > img{
+        height: 100%;
+        width: 90%;
+    }
 }
 
 /*--------Here is medium device responsive design---------*/
@@ -199,12 +238,15 @@ header nav ul li a {
     header {
         padding: 20px;
     }
-
-    .features-sec-two-container {
+    .features-card-img
+     {
         flex-direction: column;
     }
-
-    .features-sec-two-container {
-        gap: 20px;
+    .features-img .ten-badge{
+        position: static;
+    }
+    .features-img > img{
+        height: 100%;
+        width: 90%;
     }
 }
