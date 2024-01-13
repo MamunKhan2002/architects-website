@@ -11,6 +11,7 @@
 .section-title {
     font-size: 2.80rem;
     color: #131313;
+    margin-bottom: 24px;
 }
 
 .text-description {
@@ -36,6 +37,7 @@
 /*--------main section design--------*/
 main {
     max-width: 1440px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -77,9 +79,14 @@ header nav ul li a {
     text-align: center;
 }
 
-.banner>img {
+.banner>img,
+.features-sec-two-container>.features-two-img {
     width: 100%;
 }
+
+/* .features-sec-two-container> .features-two-img{
+    width: 100%;
+} */
 
 .banner .banner-content .banner-title {
     font-size: 4rem;
@@ -93,9 +100,11 @@ header nav ul li a {
     margin-block: 130px;
 }
 
-.features-sec-container .features-gallery-container img{
-        width: 100%;
-    }
+.features-sec-container .features-gallery-container img {
+    width: 100%;
+}
+
+
 .features-gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -107,9 +116,11 @@ header nav ul li a {
     font-weight: 500;
 
 }
-.features-sec-container .features-content .features-title{
+
+.features-sec-container .features-content .features-title {
     margin-bottom: 24px;
 }
+
 .quick-text {
     color: #727272;
     font-weight: 500;
@@ -120,22 +131,59 @@ header nav ul li a {
     font-weight: 700;
 }
 
+/*--------Feature Section two Design Start---------*/
+.features-sec-title-two {
+    border-left: 5px solid #FF900E;
+    padding-left: 24px;
+}
+
+.features-sec-two-container {
+    display: flex;
+    gap: 145px;
+    align-items: end;
+}
+
+.features-sec-two-container .features-two-card .card .card-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.features-sec-two-container .features-two-card .card {
+    padding: 30px 42px 30px 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.features-sec-two-container .features-two-card {
+    margin-top: 30px;
+}
+
+
+/*=====================================================================*/
 /*--------Here is Mobile responsive design--------*/
 @media screen and (max-width:576px) {
-    header, .features-sec-container {
+
+    header,
+    .features-sec-container {
         padding: 20px;
     }
 
     nav,
-    .features-sec-container
-     {
-        flex-direction: column-reverse;
+    .features-sec-container,
+    .features-sec-two-container {
+        flex-direction: column;
     }
-    .features-sec-container{
+
+    .features-sec-container,
+    .features-sec-two-container {
         gap: 40px;
     }
-    
-    .features-gallery-container{
+
+    .features-gallery-container {
         grid-template-columns: 1fr;
     }
 
@@ -147,8 +195,16 @@ header nav ul li a {
 
 /*--------Here is medium device responsive design---------*/
 
-@media screen and (min-width:576px) and (max-Width:992px){
-    header{
+@media screen and (min-width:576px) and (max-Width:992px) {
+    header {
         padding: 20px;
+    }
+
+    .features-sec-two-container {
+        flex-direction: column;
+    }
+
+    .features-sec-two-container {
+        gap: 20px;
     }
 }
